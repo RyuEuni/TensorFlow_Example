@@ -81,8 +81,8 @@ X_train = np.array(X_train)
 y_train = np.array(y_train)
 
 # 데이터 타입 변환
-X_train = X_train.astype(float)
-y_train = y_train.astype(float)
+# X_train = X_train.astype(float)
+# y_train = y_train.astype(float)
 
 # y_train의 차원 값 변경. 1차원 -> 2차원
 y_train = y_train.reshape(-1, 1)
@@ -90,22 +90,22 @@ y_train = y_train.reshape(-1, 1)
 # print("X_train 데이터 타입:", type(X_train))
 # print("y_train 데이터 타입:", type(y_train))
 
-# print("X_train 차원:", X_train.shape)
-# print("y_train 차원:", y_train.shape)
+print("X_train 차원:", X_train.shape)
+print("y_train 차원:", y_train.shape)
 
 # 모델 컴파일
-model.compile(loss='mean_squared_error', optimizer='adam')
+# model.compile(loss='mean_squared_error', optimizer='adam')
 
-# 모델 학습
-model.fit(X_train, y_train, epochs=10, batch_size=32)
+# # 모델 학습
+# model.fit(X_train, y_train, epochs=10, batch_size=32)
 
-# 모델 예측
-predictions = model.predict(X_train)
+# # 모델 예측
+# predictions = model.predict(X_train)
 
-# 모델 평가
-evaluation = model.evaluate(X_train, y_train)
+# # 모델 평가
+# evaluation = model.evaluate(X_train, y_train)
 
-print("모델 예측: ", predictions)
+# print("모델 예측: ", predictions)
 
 # 추가 작업 및 결과 분석
 # ...
